@@ -7,7 +7,7 @@ const result_add = [[4, 7], [6, 5]];
 
 const result1 = addMatrix(arr1, arr2);
 
-if (result_add === result1) {
+if (JSON.stringify(result_add) === JSON.stringify(result1)) {
     console.log("덧셈 성공");
 } else console.log("덧셈 실패");
 
@@ -16,7 +16,7 @@ const result_minus = [[-2, 1], [0, -1]];
 
 const result2 = minusMatrix(arr1, arr2);
 
-if(result_minus === result2){
+if(JSON.stringify(result_minus) === JSON.stringify(result2)){
     console.log("뺄셈 성공");
 } else console.log("뺄셈 실패");
 
@@ -25,6 +25,6 @@ const result_mul = [[15, 15],[15, 15]];
 
 const result3 = multiMatrix(arr1, arr2);
 
-if(result_mul === result3){
+if(JSON.stringify(result_mul) === JSON.stringify(result3)){
     console.log("곱셈 성공");
 } else console.log("곱셈 실패");
